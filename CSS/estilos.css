@@ -1,0 +1,508 @@
+/* FUENTES */
+
+@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@347&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+* {
+    box-sizing: border-box;
+    font-family: 'Assistant', sans-serif;
+    font-size: 1vw;
+    font-style: normal;
+    letter-spacing: 0.12rem;
+    margin: 0;
+    padding: 0;
+
+}
+
+body {
+    height: auto;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    height: 100%;
+}
+
+/* CONTAINER HEADER */
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    background: url(./IMAGENES/header2.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 20vh;
+
+}
+
+
+/* BARRA DE NAVEGACION */
+
+.container-nav {
+
+    display: flex;
+    position: relative;
+    justify-content: flex-end;
+    padding-top: 3%;
+    width: 100%;
+    max-width: 100vw;
+    overflow: hidden;
+
+
+}
+
+.nav-bar {
+
+    display: flex;
+    align-items: center;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.container-nav nav ul {
+    margin: 0;
+    display: flex;
+    list-style: none;
+    width: 100%;
+    gap: 4rem;
+}
+
+.container-nav nav ul li {
+    margin: 0;
+    padding: 0;
+
+
+}
+
+.container-nav nav ul li a {
+    color: rgb(85, 80, 80);
+    cursor: pointer;
+    text-decoration: none; /* Evita el subrayado */
+    transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.container-nav nav ul li a:hover {
+    transform: scale(1.2);
+}
+
+.container-nav nav ul li img {
+    max-width: 10vw;
+    padding-right: 20%;
+}
+
+/* TITULO HEADER */
+
+.container-title {
+    display: table-column;
+    position: absolute;
+    justify-content: flex-start;
+    top: 35%;
+    left: 9%;
+    width: 35%;
+    max-height: 60%;
+}
+
+
+.title-principal {
+    display: flex;
+    width: 100%;
+    text-transform: uppercase;
+    color: rgb(255, 255, 255);
+    font-family: "Montserrat", sans-serif;
+    font-weight: 550;
+    font-size: 4vw;
+    letter-spacing: 0.4rem;
+    background: rgba(145, 161, 145, 0.2);
+
+}
+
+.subtitle-principal {
+    display: flex;
+    text-transform: uppercase;
+    font-family: "Montserrat", sans-serif;
+    letter-spacing: 0.1rem;
+    height: 100%;
+    width: 80%;
+    font-weight: 500;
+
+}
+
+.cocktail-day a h3  {
+    position: absolute;
+    font-weight: lighter;
+    padding: 0.5%;
+    top: 92%;
+    left: 88%;
+    border: solid 1px rgb(71, 70, 70);
+    display: flex;
+    width: 10%;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+    
+}
+
+.cocktail-day a {
+    text-decoration: none; 
+    display: inline-block; 
+    color: inherit;
+}
+
+.cocktail-day a:hover h3{
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+    transform: translateY(-2px);
+}
+
+main {
+    background-color: #f9fff4;
+    padding-bottom: 10%;
+}
+
+h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+    text-align: center;
+
+}
+
+.cocktail a {
+    display: block; /* Hace que el enlace abarque toda el área del div, incluyendo la imagen */
+    text-decoration: none; /* Elimina el subrayado de los enlaces */
+}
+
+/* Estilo para cuando se pasa el ratón sobre el enlace */
+.cocktail a:hover {
+    opacity: 0.8; /* Cambia la opacidad al pasar el ratón */
+    transition: opacity 0.3s ease; /* Hace que la transición de opacidad sea suave */
+}
+
+/* Contenedor principal */
+.cocktail-container {
+    display: flex;
+    justify-content: center;
+    gap: 6rem;
+    /* Espaciado entre cócteles */
+    flex-wrap: wrap;
+    /* Para que sea responsive */
+
+}
+
+/* Cada cóctel */
+.cocktail {
+    position: relative;
+    text-align: center;
+}
+
+/* Círculo de fondo */
+.circle {
+    width: 10rem;
+    height: 10rem;
+    background-color: rgba(100, 100, 50, 0.2);
+    /* Color con transparencia */
+    border-radius: 50%;
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Imágenes */
+.cocktail img {
+    top: 40%;
+    width: 10vw;
+    max-height: 40vh;
+    position: relative;
+    z-index: 2;
+    /* Para que esté por encima del círculo */
+}
+
+.cocktail img.NEGRONI {
+    top: 20%;
+    margin-top: 2vh;
+}
+
+
+.cocktail img.MOJITO {
+    width: 13vw;
+    
+    left: 6%;
+}
+
+
+.cocktail img.COCTEL {
+    width: 13vw;
+    top: 25%;
+
+}
+
+.cocktail img.COCTEL {
+    width: 13vw;
+    top: 1vh;
+
+}
+
+.cocktail img.PIÑA-COLADA {
+    width: 8vw;
+    bottom: 1vh;
+
+}
+
+
+/* Texto */
+.cocktail p {
+    font-size: 0.7rem;
+    font-weight: 300;
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+    line-height: 1.3;
+}
+
+/* FOOTER ------------------------------------------------- */
+
+footer {
+    background-color: #a9c3a2;
+    text-align: center;
+    color: #3a3a3a;
+    margin: 0;
+    padding: 0;
+    height: auto;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+}
+
+.logo img {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    display: flex;
+    width: 18vw;
+
+}
+
+.icons-container {
+    display: flex;
+    justify-content: center;
+    gap: 4rem;
+    /* Espaciado entre iconos */
+    flex-wrap: wrap;
+    /* Para que sea responsive */
+
+}
+
+/* Contenedor de los iconos sociales */
+.social-icons {
+    display: flex;
+    gap: 2rem;
+    padding-bottom: 6em;
+}
+
+/* Cada icono */
+.icon {
+    position: relative;
+    text-align: center;
+}
+
+/* Círculo de fondo */
+.circle-icon {
+    width: 2.5rem;
+    height: 2.5rem;
+    background-color: rgb(248, 248, 232);
+    /* Color con transparencia */
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Imágenes dentro de los iconos */
+.icon img {
+    width: 1.3rem;
+    position: relative;
+    z-index: 2;
+    /* Para que esté por encima del círculo */
+    display: block;
+}
+
+
+
+.links {
+    padding-bottom: 1.2rem;
+    font-size: 2rem;
+}
+
+.links a {
+    color: #3a3a3a;
+    text-decoration: none;
+}
+
+.links a:hover {
+    text-decoration: underline;
+}
+
+
+
+
+/* MEDIAQUERIS */
+
+
+@media(max-width: 1024px) {
+
+    .container {
+        height: 60vh;
+    }
+
+    .container-title {
+        top: 20%;
+    }
+
+    .cocktail-day a h3 {
+        top: 53%;
+    }
+}
+
+@media (max-width: 768px) {
+
+
+    .container {
+        height: 50vh;
+
+    }
+
+    .container nav ul li {
+        font-size: 2rem;
+    }
+
+    .container nav ul li {
+        padding-left: 6vw;
+    }
+
+    .container-nav {
+
+        justify-content: center;
+
+    }
+
+    .container-nav nav ul {
+
+        gap: 3rem;
+    }
+
+
+    .container-nav nav ul li img {
+        max-width: 15vw;
+    }
+
+    .container-title {
+        top: 15%;
+    }
+
+    
+    .cocktail-day a h3 {
+        top: 45%;
+
+    }
+
+    h2 {
+        margin-top: 1vh;
+        font-size: 4rem;
+        padding-bottom: 2%;
+    }
+
+
+
+    .circle {
+
+        width: 30rem;
+        height: 30rem;
+
+    }
+
+    .cocktail-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 20rem;
+        padding-bottom: 15rem;
+
+    }
+
+    .cocktail p {
+        font-size: 2rem;
+    }
+
+    .cocktail img {
+        top: 35%;
+        width: 35vw;
+
+    }
+
+
+    .cocktail img.MOJITO {
+        width: 40vw;
+        margin-top: 2rem
+    }
+
+
+
+    .cocktail img.COCTEL {
+        width: 40vw;
+
+    }
+
+    .cocktail img.PIÑA-COLADA {
+        width: 30vw;
+        top: 18%;
+
+    }
+
+
+}
+
+
+@media (max-width: 390px) {
+
+    .container nav ul li {
+        font-size: 2rem;
+    }
+
+    .container nav ul li {
+        padding-left: 6vw;
+    }
+
+    .container-nav {
+
+        justify-content: center;
+
+    }
+
+    .container-nav nav ul {
+
+        gap: 3rem;
+    }
+
+    .container {
+
+        height: 27vh;
+
+
+    }
+
+    .container-title {
+        top: 10%;
+    }
+
+    .cocktail-day a h3 {
+        
+        top: 23%;
+
+    }
+
+
+}

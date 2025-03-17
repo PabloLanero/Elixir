@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@347&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: #f8fbe9;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;
+    min-height: 100vh;    
+}
+
+main{
+     flex: 1; 
+   
+}
+
+.container {
+   
+    display: flex;
+    align-items: center;
+    gap: 5%;
+    padding-bottom: 5%;
+    padding-top: 5%;
+
+}
+.circle {
+    width: 30vw;
+    height: 30vw;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    
+}
+
+.circle img{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: relative;
+}
+
+.text {
+    background-color: #dce3d0;
+    text-align: center;
+    padding: 8%;
+    font-family: "Montserrat", sans-serif;
+}
+.cocktail-day {
+    font-size: 1.1vw;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    padding-bottom: 5%;
+    border-bottom: 0.1vw solid #000;
+}
+.title {
+    font-size: 2.5vw;
+    font-weight: 600;
+    margin: 10px 0;
+    text-transform: uppercase;
+    letter-spacing: 1rem;
+    padding-bottom: 5%;
+    border-bottom: 0.1vw solid #000;
+}
+
+.ingredients {
+    font-size: 0.85vw;
+    margin: 5px 0;
+    
+}
+
+/* FOOTER ------------------------------------------------- */
+footer {
+    
+    background-color: #a9c3a2;
+    text-align: center;
+    color: #3a3a3a;
+    margin: 0;
+    height: fit-content;
+    width: 100%;
+    flex-wrap: wrap;
+    flex-shrink: 0;
+
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+}
+
+.logo img {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    display: flex;
+    width: 7vw;
+
+}
+
+
+.links {
+    padding-bottom: 1.2rem;
+    font-size: 1 rem;
+    font-family: "Assistant", sans-serif;
+}
+
+.links a {
+    color: #3a3a3a;
+    text-decoration: none;
+}
+
+.links a:hover {
+    text-decoration: underline;
+}
+
+
+@media (max-width: 768px) {
+
+.container{
+    display: grid;
+    column-count: 1;
+    gap:0;
+    align-items: center;
+    padding: 2rem;
+    background: white;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.15); /* Sombra suave */
+    border-radius: 30px;
+    margin-bottom: 10%;
+    margin-top: 10%;
+}
+
+.circle {
+    border-radius: 0%;
+    width: 65vw;
+    height: 65vw;
+
+}
+
+.text{
+letter-spacing: none;
+display: flex;
+height: 30vh;
+line-height: 1.5em;
+}
+
+
+.logo img {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    display: flex;
+    width: 20vw;
+
+}
+
+.ingredients {
+    font-size: 2vw;
+    margin: 5px 0;
+    
+}
+
+}
+
+@media (max-width: 390px) {
+
+    .links {
+        padding-bottom: 1 rem;
+        font-size: 2vw;
+        font-family: "Assistant", sans-serif;
+    }
+
+    .logo img {
+        padding-top: 2rem;
+        padding-bottom: 1rem;
+        display: flex;
+    
+    }
+
+
+}
